@@ -41,7 +41,7 @@ html, body {
     object-fit: cover;
     border-radius: 12px;
     opacity: 0;
-    
+
     border: 1px solid rgba(255, 238, 247, .82);
     box-shadow: inset 0 0 2px rgba(255, 182, 213, .45),
                 0 0 4px rgba(255, 224, 241, .58),
@@ -308,7 +308,7 @@ html, body {
     flex-wrap: wrap;
     text-shadow: 0 0 20px white;
     animation: appearTitle 2s linear 3.1s forwards, floatingWords 4s ease-in-out infinite;
-    
+
 }
 
 .container .btnBox {
@@ -412,7 +412,7 @@ html, body {
         animation: none;
         top: 140%;
     }
-    
+
 }
 
 .cardValentine {
@@ -779,7 +779,7 @@ html, body {
     }
 
     .cloudBtn::before {
-        
+
     }
 
     .cardValentine,
@@ -948,15 +948,19 @@ html, body {
     .container.active .cloud,
     .container.active .cloud1,
     .container.active .cloud2 {
-        transform: scale(.38, .28);
+        transform: scale(.5, .38);
         transform-origin: top left;
     }
 
+    .container.active .cloud {
+        top: 155px;
+    }
+
     .container.active .cloud1 {
-        top: 38px;
+        top: 190px;
     }
 
     .container.active .cloud2 {
-        top: 76px;
+        top: 225px;
     }
-}
+    }
