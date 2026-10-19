@@ -985,4 +985,36 @@ html, body {
     .container.active .cloud2 {
         top: calc(100% - 144px) !important;
     }
-                         }
+}
+
+@media (max-width: 600px) {
+    .container.active .cloud,
+    .container.active .cloud1,
+    .container.active .cloud2 {
+        height: 200px !important;
+        width: 200px !important;
+        transform: none !important;
+        transform-origin: top left !important;
+        animation: mobileCloudFloat 3s ease-in-out infinite !important;
+    }
+
+    .container.active .cloud {
+        top: 0 !important;
+        animation-delay: 0s !important;
+    }
+
+    .container.active .cloud1 {
+        top: 75px !important;
+        animation-delay: 0s !important;
+    }
+
+    .container.active .cloud2 {
+        top: 150px !important;
+        animation-delay: 0s !important;
+    }
+}
+
+@keyframes mobileCloudFloat {
+    0%, 100% { margin-top: 0; }
+    50% { margin-top: -4px; }
+}
