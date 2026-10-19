@@ -948,7 +948,15 @@ html, body {
     .container.active .cloud,
     .container.active .cloud1,
     .container.active .cloud2 {
-        transform: scaleY(.68);
+        transform: scale(.38, .28);
         transform-origin: top left;
+    }
+
+    .container.active .cloud1 {
+        top: 38px;
+    }
+
+    .container.active .cloud2 {
+        top: 76px;
     }
 }
