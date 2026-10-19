@@ -888,3 +888,67 @@ html, body {
     .boxTitleCard { width: min(30vh, 180px); height: min(30vh, 180px); }
     .des { bottom: 8px; }
 }
+
+
+.container.active .cloud,
+.container.active .cloud1,
+.container.active .cloud2 {
+    width: 200px;
+    background-repeat: repeat-x;
+}
+
+.container.active .cloud {
+    box-shadow: 120px -20px #ffb3c1, 240px -40px #ffb3c1, 360px -20px #ffb3c1,
+    480px 0 #ffb3c1, 600px -10px #ffb3c1, 720px 10px #ffb3c1, 840px 20px #ffb3c1,
+    960px 0 #ffb3c1, 1080px 40px #ffb3c1, 1200px 20px #ffb3c1, 1320px 0 #ffb3c1,
+    1440px -20px #ffb3c1, 1560px 0 #ffb3c1, 1680px -10px #ffb3c1, 1800px 10px #ffb3c1,
+    1920px 0 #ffb3c1, 2040px -20px #ffb3c1, 2160px 0 #ffb3c1, 2280px 10px #ffb3c1,
+    2400px -10px #ffb3c1, 2520px 0 #ffb3c1, 2640px 20px #ffb3c1, 2760px 0 #ffb3c1,
+    2880px -10px #ffb3c1, 3000px 0 #ffb3c1;
+}
+
+.container.active .cloud1 {
+    box-shadow: 120px -20px #ffccd5, 240px -40px #ffccd5, 360px -20px #ffccd5,
+    480px 0 #ffccd5, 600px -10px #ffccd5, 720px 10px #ffccd5, 840px 20px #ffccd5,
+    960px 0 #ffccd5, 1080px 40px #ffccd5, 1200px 20px #ffccd5, 1320px 0 #ffccd5,
+    1440px -20px #ffccd5, 1560px 0 #ffccd5, 1680px -10px #ffccd5, 1800px 10px #ffccd5,
+    1920px 0 #ffccd5, 2040px -20px #ffccd5, 2160px 0 #ffccd5, 2280px 10px #ffccd5,
+    2400px -10px #ffccd5, 2520px 0 #ffccd5, 2640px 20px #ffccd5, 2760px 0 #ffccd5,
+    2880px -10px #ffccd5, 3000px 0 #ffccd5;
+}
+
+.container.active .cloud2 {
+    box-shadow: 120px -20px white, 240px -20px white, 360px -20px white,
+    480px 0 white, 600px -10px white, 720px 10px white, 840px 20px white,
+    960px 0 white, 1080px 40px white, 1200px 20px white, 1320px 0 white,
+    1440px -20px white, 1560px 0 white, 1680px -10px white, 1800px 10px white,
+    1920px 0 white, 2040px -20px white, 2160px 0 white, 2280px 10px white,
+    2400px -10px white, 2520px 0 white, 2640px 20px white, 2760px 0 white,
+    2880px -10px white, 3000px 0 white;
+}
+
+.openBtn {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: 0 1px 3px rgba(120, 25, 55, .18);
+}
+
+.openBtn:hover,
+.openBtn:focus-visible {
+    background: transparent;
+    box-shadow: none;
+    color: #98234a;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .container.active .cloud,
+    .container.active .cloud1,
+    .container.active .cloud2 {
+        transform: scaleY(.68);
+        transform-origin: top left;
+    }
+}
